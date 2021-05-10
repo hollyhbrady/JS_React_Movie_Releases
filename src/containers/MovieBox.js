@@ -35,7 +35,7 @@ const MovieBox = () => {
     return (
         <>
         <h1>Movies</h1>
-        <p>Movie list</p>
+        <MovieList movies={movies}/>
         </>
     )
 };

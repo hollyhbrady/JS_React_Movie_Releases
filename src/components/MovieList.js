@@ -5,13 +5,13 @@ const MovieList = ({movies}) => {
     
     const movieNodes = movies.map(movie => {
         return (
-            <Movie key={movie}>{movie.name}</Movie>
+            <Movie url={movie.url} key={movie}>{movie.name}</Movie>
         );
     });
 
     return (
         <>
-            <p>{movieNodes}</p>
+            {movieNodes}
         </>
     )
 };
