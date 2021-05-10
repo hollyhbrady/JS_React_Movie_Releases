@@ -1,17 +1,19 @@
 import React from 'react';
 import Movie from './Movie';
 
-const MovieList = () => {
+const MovieList = ({movies}) => {
     
     const movieNodes = movies.map(movie => {
         return (
-            <Movie />
+            <Movie key={movie}>{movie.name}</Movie>
         );
     });
 
     return (
         <>
-            <p>individ movies</p>
+            <p>{movieNodes}</p>
         </>
     )
-}
+};
+
+export default MovieList;
