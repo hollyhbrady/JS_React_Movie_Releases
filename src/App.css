@@ -8,9 +8,18 @@ a {
   text-decoration: none;
 }
 
-h3 {
+/* h3 {
   color: blue;
+} */
+
+body {
+  background-color: rgb(230, 228, 228);
 }
+
+#releases {
+  text-size-adjust: 30px;
+}
+
 
 
 
